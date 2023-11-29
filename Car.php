@@ -10,11 +10,19 @@ class Car {
     }
 
     public function __destruct() {
-        echo $this->brand . " is dead💀". "<br>";
+        echo $this->brand . " is dead💀" . "<br>";
     }
 
     public function drive() {
         echo " Brauc ļoti ātri😱 " . "<br>";
+    }
+
+    public function increaseMileage($amount) {
+        $this->mileage = $this->mileage + $amount;
+    }
+
+    static function makeNoice() {
+        echo "Beep, Beep!";
     }
 }
 ?>
