@@ -1,11 +1,17 @@
 <?php
+include_once "Vehicle.php";
 
 class Train {
-    public function __construct(public $brand, public $trackGauge, private $mileage) {
+    public $trackGauge;
+
+    public function __construct($brand, $trackGauge, $mileage) {
+        $this->brand = $brand;
+        $this->trackGauge = $trackGauge;
+        $this->mileage = $mileage;
     }
 
-    public function __destruct() {
-        echo $this->brand . "is Dead" . $this->mileage . "<br>";
+    static function makeNoice() {
+        echo "Choo Choo!" . "<br><br>";
     }
 }
 ?>
