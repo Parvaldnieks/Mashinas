@@ -6,6 +6,11 @@ abstract class Vehicle {
 
     static $description = "I am large and ViVi";
 
+    public function __construct($brand = "", $mileage = 0) {
+        $this->brand = $brand;
+        $this->mileage = $mileage;
+    }
+    
     public function __destruct() {
         echo $this->brand . " is dead at mileage💀" . $this->mileage . "km <br>";
     }

@@ -2,6 +2,7 @@
 include "Car.php";
 include "Tire.php";
 include "Train.php";
+include "Dog.php";
 
 $car1 = new Car("Honda - ", "11", "slicks", 21);
 $car1->brand;
@@ -13,6 +14,7 @@ $car3 = new Car("Toyota - ", "15", "stock", 69);
 $car3->brand;
 
 $myCar = new Car("BMW", 0.01);
+
 
 //-------------------------VILCIENS----------------------
 
@@ -42,4 +44,6 @@ echo "<br>";
 
 Train::makeNoice();
 
+$myDog = new Dog("Reksis", "6");
+$myDog->birthday(1);
 ?>
